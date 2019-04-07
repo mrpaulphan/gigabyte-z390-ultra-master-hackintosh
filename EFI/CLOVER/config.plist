@@ -92,7 +92,7 @@
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>slide=0 dart=0 darkwake=0 keepsyms=1 debug=0x100</string>
+		<string>slide=0 dart=0 darkwake=0 keepsyms=1 debug=0x100 -v kextlog=0xffff</string>
 		<key>DefaultVolume</key>
 		<string>LastBootedVolume</string>
 		<key>Timeout</key>
@@ -243,6 +243,224 @@
 				<key>Replace</key>
 				<data>
 				g32ID5CQkJCQkA==
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>IONVMeFamily: Ignore FLBAS bit:4 being set - for Plextor/LiteOn/Hynix (credit Pene)</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				ikga9sEQ
+				</data>
+				<key>InfoPlistPatch</key>
+				<false/>
+				<key>Name</key>
+				<string>com.apple.iokit.IONVMeFamily</string>
+				<key>Replace</key>
+				<data>
+				ikga9sEA
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>IONVMeFamily Preferred Block Size 0x10 -&gt; 0x01 (c) Pike R. Alpha </string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				9sEQD4UcAQAA
+				</data>
+				<key>InfoPlistPatch</key>
+				<false/>
+				<key>MatchOS</key>
+				<string>10.12.x</string>
+				<key>Name</key>
+				<string>com.apple.iokit.IONVMeFamily</string>
+				<key>Replace</key>
+				<data>
+				9sEBD4UcAQAA
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>IONVMeFamily Preferred Block Size 0x10 -&gt; 0x02 (c) Pike R. Alpha </string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				9sEQD4UcAQAA
+				</data>
+				<key>InfoPlistPatch</key>
+				<false/>
+				<key>MatchOS</key>
+				<string>10.12.x</string>
+				<key>Name</key>
+				<string>com.apple.iokit.IONVMeFamily</string>
+				<key>Replace</key>
+				<data>
+				9sECD4UcAQAA
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>IONVMeFamily Preferred Block Size 0x10 -&gt; 0x04 (c) Pike R. Alpha </string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				9sEQD4UcAQAA
+				</data>
+				<key>InfoPlistPatch</key>
+				<false/>
+				<key>MatchOS</key>
+				<string>10.12.x</string>
+				<key>Name</key>
+				<string>com.apple.iokit.IONVMeFamily</string>
+				<key>Replace</key>
+				<data>
+				9sEED4UcAQAA
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>IONVMeFamily Preferred Block Size 0x10 -&gt; 0x08 (c) Pike R. Alpha </string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				9sEQD4UcAQAA
+				</data>
+				<key>InfoPlistPatch</key>
+				<false/>
+				<key>MatchOS</key>
+				<string>10.12.x</string>
+				<key>Name</key>
+				<string>com.apple.iokit.IONVMeFamily</string>
+				<key>Replace</key>
+				<data>
+				9sEID4UcAQAA
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>IONVMeFamily Preferred Block Size 0x10 -&gt; 0x01, credit RehabMan based on 10.12 patch (c) Pike R. Alpha </string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				9sEQD4VBAQAA
+				</data>
+				<key>InfoPlistPatch</key>
+				<false/>
+				<key>MatchOS</key>
+				<string>10.13.x</string>
+				<key>Name</key>
+				<string>com.apple.iokit.IONVMeFamily</string>
+				<key>Replace</key>
+				<data>
+				9sEBD4VBAQAA
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>IONVMeFamily Preferred Block Size 0x10 -&gt; 0x02, credit RehabMan based on 10.12 patch, (c) Pike R. Alpha </string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				9sEQD4VBAQAA
+				</data>
+				<key>InfoPlistPatch</key>
+				<false/>
+				<key>MatchOS</key>
+				<string>10.13.x</string>
+				<key>Name</key>
+				<string>com.apple.iokit.IONVMeFamily</string>
+				<key>Replace</key>
+				<data>
+				9sECD4VBAQAA
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>IONVMeFamily Preferred Block Size 0x10 -&gt; 0x04, credit RehabMan based on 10.12 patch (c) Pike R. Alpha </string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				9sEQD4VBAQAA
+				</data>
+				<key>InfoPlistPatch</key>
+				<false/>
+				<key>MatchOS</key>
+				<string>10.13.x</string>
+				<key>Name</key>
+				<string>com.apple.iokit.IONVMeFamily</string>
+				<key>Replace</key>
+				<data>
+				9sEED4VBAQAA
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>IONVMeFamily Preferred Block Size 0x10 -&gt; 0x08, credit RehabMan based on 10.12 patch (c) Pike R. Alpha </string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				9sEQD4VBAQAA
+				</data>
+				<key>InfoPlistPatch</key>
+				<false/>
+				<key>MatchOS</key>
+				<string>10.13.x</string>
+				<key>Name</key>
+				<string>com.apple.iokit.IONVMeFamily</string>
+				<key>Replace</key>
+				<data>
+				9sEID4VBAQAA
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>IONVMeFamily Pike R. Alpha PM981 patch by DalianSky</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				9sEQD4VBAQA=
+				</data>
+				<key>InfoPlistPatch</key>
+				<false/>
+				<key>MatchOS</key>
+				<string>10.13.x,10.14</string>
+				<key>Name</key>
+				<string>IONVMeFamily</string>
+				<key>Replace</key>
+				<data>
+				9sEBD4VBAQA=
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>IONVMeFamily Pike R. Alpha Hynix SSD patch by DalianSky</string>
+				<key>Disabled</key>
+				<true/>
+				<key>Find</key>
+				<data>
+				9sEQD4VBAQAA
+				</data>
+				<key>InfoPlistPatch</key>
+				<false/>
+				<key>MatchOS</key>
+				<string>10.13.x,10.14</string>
+				<key>Name</key>
+				<string>IONVMeFamily</string>
+				<key>Replace</key>
+				<data>
+				9sECD4VBAQAA
 				</data>
 			</dict>
 			<dict>
