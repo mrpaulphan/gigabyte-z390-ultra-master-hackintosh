@@ -96,7 +96,7 @@
 		<key>DefaultVolume</key>
 		<string>LastBootedVolume</string>
 		<key>Timeout</key>
-		<integer>5</integer>
+		<integer>10</integer>
 		<key>XMPDetection</key>
 		<string>Yes</string>
 	</dict>
@@ -292,7 +292,7 @@
 		<key>BoardManufacturer</key>
 		<string>Apple Inc.</string>
 		<key>BoardSerialNumber</key>
-		<string>C078375004NUE</string>
+		<string>C07846310J98C</string>
 		<key>BoardType</key>
 		<integer>10</integer>
 		<key>BoardVersion</key>
@@ -322,7 +322,7 @@
 		<key>ProductName</key>
 		<string>Macmini8,1</string>
 		<key>SerialNumber</key>
-		<string>C07XD0GTJYVX</string>
+		<string>C07XPFZ9JYVX</string>
 		<key>SmUUID</key>
 		<string>9F515EDF-77E0-4D2A-9DB1-9AADB051E0FE</string>
 		<key>Version</key>
