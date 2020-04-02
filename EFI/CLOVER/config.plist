@@ -96,7 +96,7 @@
 		<key>DefaultVolume</key>
 		<string>LastBootedVolume</string>
 		<key>Timeout</key>
-		<integer>10</integer>
+		<integer>15</integer>
 		<key>XMPDetection</key>
 		<string>Yes</string>
 	</dict>
@@ -179,6 +179,12 @@
 	</dict>
 	<key>GUI</key>
 	<dict>
+		<key>Hide</key>
+		<array>
+			<string>Preboot</string>
+			<string>Recovery</string>
+			<string>Legacy HD2</string>
+		</array>
 		<key>Scan</key>
 		<dict>
 			<key>Entries</key>
